@@ -2,37 +2,49 @@ Spry Framework
 ==============
 
 Spry Framework is a HTML/CSS Base Framework that I use as a **starting point** on my projects.
-It is not intended to be a fully functioning design/layout guide such as Bootstrap or Foundation, but rather a set of my best practices that I like to use. 
-I set the base for a project by including the modules that it requires and then build out the styles that the project requires from there.
+It is not intended to be a fully functioning design/layout guide such as Bootstrap or Foundation, but rather a set of my best practices that I have built up over time. 
+
+I set the base for a project by including only the modules it requires and then build out all the project styles from there.
 
 Feel free to use this, adapt it or even <a href="mailto:me@lyndendesigns.com">let me know</a> if you feel you have an approach that works better as I am always keen to hear alternative view points.
 
 CSS/SASS styleguide
 --------------------
 
-### Naming Convention
-- All classes and values should be defined in lowercase and hyphenated e.g. `.lorem-ipsum`. 
-- Classes that are modifiers should be indicated with double hyphens e.g. `.btn--s` or `.btn--primary`. A modifier is a class that alters the styling of a base class in some way, for example setting the size or urgency of a button.
+## General Formatting
 
-### Spacing
+- Use tabs set to 4 spaces
+- Use a space before braces ` {`
+- Use a space after the `:` in property declarations
+- Use lowercase class names and hyphenate where applicable
 
-####General
-
-A space should always follow an attribute before the value is defined, for example `width: 5em;`. Styles should be indented
- using 1 tab with the spacing set to 4 spaces.
-
-``` 
+``` css
 .lorem-ipsum {
-    width: 5em;
+	width: 5em;
 }
 ```
 
+## Comments
+Comments are key to giving a good understanding of whats going on within a document. I adopt the following approach to comments within CSS/SASS documents.
+
+Single line comments should us `//` where possible
+
+``` css
+// Single line comment
+
+/*    =Section level comment
+------------------------------------------------------------*/
+```
+
+## Naming Convention
+- All classes and values should be defined in lowercase and hyphenated e.g. `.lorem-ipsum`. 
+- Classes that are modifiers should be indicated with double hyphens e.g. `.btn--s` or `.btn--primary`. A modifier is a class that alters the styling of a base class in some way, for example setting the size or urgency of a button.
+
 ####SASS Nesting
-- Nesting follows the 4 space tab approach
 - Classes should be separated by a blank line
 - If a class has nested elements within but not any styles applied directly to the root class then a line should be left to help see this easily.
 
-``` 
+``` css
 // Nested class with direct styles
 .lorem-ipsum {
     width: 5em;
@@ -45,9 +57,11 @@ A space should always follow an attribute before the value is defined, for examp
         color: #fff;
     }
 }
+```
 
+``` css
 // Nested class without direct styles
-.nested-class-without-direct {
+.lorem-ipsum {
 
     .dolor {
         color: #333;
