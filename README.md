@@ -13,10 +13,14 @@ CSS/SASS styleguide
 
 ## General Formatting
 
-- Use tabs set to 4 spaces
-- Use a space before braces ` {`
-- Use a space after the `:` in property declarations
-- Use lowercase class names and hyphenate where applicable
+- Use tabs set to 4 spaces.
+- Use a space before braces ` {`.
+- Use multiline declarations.
+- Properties are grouped by type and in order of importance.
+- Use a space after the `:` in property declarations.
+- Use lowercase class names and hyphenate where applicable.
+- Colour declarations in hex unless rgba value is required.
+- Use short hex format where possible e.g. `#CCC`.
 
 ``` css
 .lorem-ipsum {
@@ -24,28 +28,14 @@ CSS/SASS styleguide
 }
 ```
 
-## Comments
-Comments are key to giving a good understanding of whats going on within a document. I adopt the following approach to comments within CSS/SASS documents.
-
-Single line comments should us `//` where possible
-
-``` css
-// Single line comment
-
-/*    =Section level comment
-------------------------------------------------------------*/
-```
-
-## Naming Convention
-- All classes and values should be defined in lowercase and hyphenated e.g. `.lorem-ipsum`. 
-- Classes that are modifiers should be indicated with double hyphens e.g. `.btn--s` or `.btn--primary`. A modifier is a class that alters the styling of a base class in some way, for example setting the size or urgency of a button.
-
-####SASS Nesting
-- Classes should be separated by a blank line
-- If a class has nested elements within but not any styles applied directly to the root class then a line should be left to help see this easily.
+##SCSS Formatting
+- Use SCSS syntax.
+- Selectors should be separated by a blank line.
+- Should a selector have nested elements within but no direct property declarations, a blank line should be left before the nested selector, this gives visual separation allowing easier scanning.
+- Selectors without direct property declarations should be kept to a minimum.
 
 ``` css
-// Nested class with direct styles
+// Parent selector with property declarations and nested selectors
 .lorem-ipsum {
     width: 5em;
     
@@ -57,10 +47,8 @@ Single line comments should us `//` where possible
         color: #fff;
     }
 }
-```
 
-``` css
-// Nested class without direct styles
+// Parent selector without property declarations and nested selectors
 .lorem-ipsum {
 
     .dolor {
@@ -72,5 +60,47 @@ Single line comments should us `//` where possible
     }
 }
 ```
+
+## Naming Convention
+- All classes and values should be defined in lowercase and hyphenated where applicable e.g. `.lorem-ipsum`. 
+- Classes that are modifiers should be indicated with double hyphens e.g. `.btn--s` or `.btn--primary`. A modifier is a class that alters the styling of a base class in some way, for example setting the size or urgency of a button.
+- Keep class names as short as possible whilst still being meaningful.
+
+
+## Comments
+Comments are key to giving a good understanding of whats going on within a document. I adopt the following approach to comments within CSS/SASS documents.
+
+Single line comments should us `//` where possible, e.g. when using SASS.
+
+Section level comments are prefixed with `=` to allow easy searching within files. Their headings are also capitalised helping them stand out.
+
+``` css
+// Single line comment
+
+/*    =SECTION LEVEL COMMENT
+------------------------------------------------------------*/
+```
+
+## File Structure
+Below shows the general file structure used for styles. The partials vary per project but this gives a general idea. The partials are as follows:
+- base.scss - contains all the compass import, all variables and mixins
+- normalize.scss - a version of Nicolas Galaghers <a href="https://github.com/necolas/normalize.css">Normalize</a> with some minor alterations
+
+``` css
+ - styles
+    - css
+    - fonts
+    - img
+    - sass
+      - partials
+      	- _base.scss
+      	- _normalize.scss
+      	- _typography.scss
+      	- _form.scss
+      	- _temp.scss
+      - screen.scss
+```
+
+
 
     
