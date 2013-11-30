@@ -85,6 +85,8 @@ Section level comments are prefixed with `=` to allow easy searching within file
 Below shows the general file structure used for styles. The partials vary per project but this gives a general idea. The partials are as follows:
 - base.scss - contains all the compass import, all variables and mixins
 - normalize.scss - a version of Nicolas Galaghers <a href="https://github.com/necolas/normalize.css">Normalize</a> with some minor alterations
+- temp.scss - When working in larger teams sometimes quick fixes need to be made and passed onto the designer/front end dev to clean up. temp is a partial to contain these temporary styles. Contents of this file should be refactored into the other partials/main sass before the project goes into production.
+- The other partials are fairly self explanatory.
 
 ``` css
  - styles
