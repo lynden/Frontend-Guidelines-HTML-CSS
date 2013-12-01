@@ -1,10 +1,7 @@
-Spry Framework
+HTML/CSS Frontend Guidelines
 ==============
 
-Spry Framework is a HTML/CSS Base Framework that I use as a **starting point** on my projects.
-It is not intended to be a fully functioning design/layout guide such as Bootstrap or Foundation, but rather a set of my best practices that I have built up over time. 
-
-I set the base for a project by including only the modules it requires and then build out all the project styles from there.
+The following guidelines have been built up over the years of working on projects of varying scale and complexity, reviewing information and advice from others in the field and essentially combining all this into my workflow.
 
 Feel free to use this, adapt it or even <a href="mailto:me@lyndendesigns.com">let me know</a> if you feel you have an approach that works better as I am always keen to hear alternative view points.
 
@@ -21,6 +18,7 @@ CSS/SASS styleguide
 - Use lowercase class names and hyphenate where applicable.
 - Colour declarations in hex unless rgba value is required.
 - Use short hex format where possible e.g. `#CCC`.
+- SASS variables should be used when a colour is declared more than once.
 
 ``` css
 .lorem-ipsum {
@@ -63,22 +61,31 @@ CSS/SASS styleguide
 
 ## Naming Convention
 - All classes and values should be defined in lowercase and hyphenated where applicable e.g. `.lorem-ipsum`. 
+- Try to be generic rather than specify the visual layout or style with names e.g dont use `.form-row` as this implies that it will always be spread horizontally, instead use `.form-group` which allows flexibility in its layout.
 - Classes that are modifiers should be indicated with double hyphens e.g. `.btn--s` or `.btn--primary`. A modifier is a class that alters the styling of a base class in some way, for example setting the size or urgency of a button.
 - Keep class names as short as possible whilst still being meaningful.
+- Dont qualify selectors unless absolutely necessary e.g. dont use `ul.nav-sub` instead simply use `.nav-sub`, this offers better performance and allows more flexibility in using the class on other elements.
 
 
 ## Comments
 Comments are key to giving a good understanding of whats going on within a document. I adopt the following approach to comments within CSS/SASS documents.
 
-Single line comments should us `//` where possible, e.g. when using SASS.
-
-Section level comments are prefixed with `=` to allow easy searching within files. Their headings are also capitalised helping them stand out.
+- Single line comments should us `//` where possible, e.g. when using SASS.
+- Section level comments are prefixed with `=` to allow easy searching within files. Their headings are also capitalised helping them stand out. The lower section comment block should be 70 characters long.
+- If multiple single line comments are used within the same selector, adopt a tabbed approach to align them.
 
 ``` css
-// Single line comment
+.lorem-ipsum {
+	width: 20em;		// Single line comment
+	background: #ccc;	// tabbed approach to align multiple single line comments
+}
 
-/*    =SECTION LEVEL COMMENT
-------------------------------------------------------------*/
+/*	=SECTION LEVEL COMMENT
+--------------------------------------------------------------------*/
+
+/*	=SECTION LEVEL COMMENT WITH SUB INFO
+	 Sub information for the section	
+--------------------------------------------------------------------*/
 ```
 
 ## File Structure
