@@ -97,16 +97,16 @@ Below shows the general file structure used for styles. The partials vary per pr
 - The other partials are fairly self explanatory.
 
 ``` css
- - styles
-    - css
-    - fonts
-    - img
-    - sass
-      - partials
-      	- _base.scss
-      	- _normalize.scss
-      	- _typography.scss
-      	- _form.scss
-      	- _temp.scss
-      - screen.scss
+|-styles
+|--- css
+|--- fonts
+|--- img
+|--- sass
+|------ partials
+|--------- _base.scss
+|--------- _normalize.scss
+|--------- _typography.scss
+|--------- _form.scss
+|--------- _temp.scss
+|------ screen.scss
 ```
