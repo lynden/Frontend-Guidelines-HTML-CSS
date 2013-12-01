@@ -7,6 +7,7 @@ Feel free to use this, adapt it or even <a href="mailto:me@lyndendesigns.com">le
 
 CSS/Sass styleguide
 --------------------
+This section details the guidelines when working with standard CSS and when using Sass.
 
 ## General Formatting
 
