@@ -9,6 +9,9 @@ CSS/Sass styleguide
 --------------------
 This section details the guidelines when working with standard CSS and when using Sass.
 
+## General Guidelines
+Adopt a DRY (Do not Repeat Yourself) approach to your CSS and markup files. Nobody likes to type more than they need to, in this aspect it pays to be lazy.
+
 ## General Formatting
 
 - Use tabs set to 4 spaces.
