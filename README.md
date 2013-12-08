@@ -10,7 +10,7 @@ CSS/Sass styleguide
 This section details the guidelines when working with standard CSS and when using Sass.
 
 ## General Guidelines
-Adopt a DRY (Do not Repeat Yourself) approach to your CSS and markup. this allows you to have more managable code and allows you to work quicker, nobody likes to type more than they need to, in this aspect it pays to be lazy.
+Adopt a DRY (Do not Repeat Yourself) approach to your CSS and markup. This approach allows you to have more managable code and to work quicker, nobody likes to type more than they need to, in this aspect it pays to be lazy.
 
 ## General Formatting
 
