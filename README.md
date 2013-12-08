@@ -3,14 +3,14 @@ Frontend Guidelines (HTML/CSS)
 
 The following guidelines have been built up over the years of working on projects of varying scale and complexity, reviewing information and advice from others in the field and essentially combining all this into my workflow.
 
-Feel free to use this, adapt it or even <a href="mailto:me@lyndendesigns.com">let me know</a> if you feel you have an approach that works better as I am always keen to hear alternative view points.
+Feel free to use this, adapt it, or even <a href="mailto:me@lyndendesigns.com">let me know</a> if you feel you have an approach that works better as I am always keen to hear alternative view points.
 
 CSS/Sass styleguide
 --------------------
 This section details the guidelines when working with standard CSS and when using Sass.
 
 ## General Guidelines
-Adopt a DRY (Do not Repeat Yourself) approach to your CSS and markup files. Nobody likes to type more than they need to, in this aspect it pays to be lazy.
+Adopt a DRY (Do not Repeat Yourself) approach to your CSS and markup. this allows you to have more managable code and allows you to work quicker, nobody likes to type more than they need to, in this aspect it pays to be lazy.
 
 ## General Formatting
 
