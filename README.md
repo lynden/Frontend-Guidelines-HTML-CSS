@@ -10,7 +10,7 @@ CSS/Sass styleguide
 This section details the guidelines when working with standard CSS and when using Sass.
 
 ## General Guidelines
-Adopt a DRY (Do not Repeat Yourself) approach to your CSS and markup. This approach allows you to have more managable code and to work quicker, nobody likes to type more than they need to, in this aspect it pays to be lazy.
+Adopt a DRY (Don't Repeat Yourself) approach to your code. This approach allows you to have more managable code and to work quicker, nobody likes to type more than they need to so in this aspect it pays to be lazy.
 
 ## General Formatting
 
@@ -110,7 +110,8 @@ Below shows the general file structure used for styles. The partials vary per pr
 |--------- _base.scss
 |--------- _normalize.scss
 |--------- _typography.scss
-|--------- _form.scss
+|--------- _forms.scss
+|--------- _buttons.scss
 |--------- _temp.scss
 |------ screen.scss
 ```
