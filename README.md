@@ -32,7 +32,7 @@ Adopt a DRY (Don't Repeat Yourself) approach to your code. This approach allows 
 ##SCSS Formatting
 - Use SCSS syntax.
 - Selectors should be separated by a blank line.
-- Should a selector have nested elements within but no direct property declarations, a blank line should be left before the nested selector, this gives visual separation allowing easier scanning.
+- Leave a blank line at the start and end of nested statements, this gives visual separation allowing easier scanning.
 - Selectors without direct property declarations should be kept to a minimum.
 - Place @extend declarations first. This allows overrides to take place.
 - Place @includes last. Overides shouldnt be needed for includes as they will contain arguments.
@@ -49,6 +49,7 @@ Adopt a DRY (Don't Repeat Yourself) approach to your code. This approach allows 
     .sit {
         color: #fff;
     }
+    
 }
 
 // Parent selector without property declarations and nested selectors
@@ -61,6 +62,7 @@ Adopt a DRY (Don't Repeat Yourself) approach to your code. This approach allows 
     .sit {
         color: #fff;
     }
+    
 }
 ```
 
